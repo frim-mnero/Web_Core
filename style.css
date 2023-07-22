@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TTLakes";
-  src: url(../fonts/TTLakes-Regular.woff)
+  src: url(/KateAcademy/HTML_CSS/block1.3/fonts/TTLakes-Regular.woff)
     format("truetype");
   font-style: normal;
 }
@@ -114,7 +114,7 @@ h1 {
   letter-spacing: -0.2px;
 }
 .main__text_readMore::before {
-  content: url(../img/expand.svg);
+  content: url(../learnKata/img/expand.svg);
   display: inline-block;
 }
 .main__img {
@@ -123,38 +123,21 @@ h1 {
 .section {
   display: none;
 }
-/* @media(max-width:1920px){
-    header.header{
-        display: none;
-    }
-    .section>h1{
-        padding: 0;
-    }
-    .section{
+
+@media (min-width:1120px){
+    .main__nav{
         display: flex;
-        justify-content: space-between;
-        padding: 42px 32px 0 32px;
-        margin: 0;
-        
+        flex-wrap: wrap;
     }
-    .section__group,.section__group_item{
-        display: flex;
-    }
-    .section__group_item{
-        gap: 8px;
-    }
-    .section__group_item-title{
-        padding-top: 50px;
-    }
-    .section__group_item-link,.section>h1{
-        padding-top: 42px;
-    }
-} */
+}
 @media (max-width: 1920px) {
   .main {
     height: 535px;
   }
-  .main > h1 {
+  /* .main > h1 {
+    display: none;
+  } */
+  .main>h1{
     display: none;
   }
   .header {
@@ -187,7 +170,7 @@ h1 {
     padding-top: 42px;
   }
   .main__nav {
-    padding-top: 8px;
+   
   }
   .main__group_main {
     display: flex;
@@ -215,7 +198,7 @@ h1 {
     display: none;
   }
 }
-@media (max-width: 1120px) {
+@media (max-width: 1119px) {
   .section {
     display: none;
   }
@@ -225,6 +208,9 @@ h1 {
   .main {
     padding-left: 24px;
   }
+.section>h1{
+    
+}
   .main__group_main {
     display: flex;
     justify-content: space-around;
@@ -259,7 +245,7 @@ h1 {
     padding: 24px 0;
   }
   .main__text {
-    min-width: 288px;
+    max-width: 288px;
     height: 160px;
   }
   .main__text_readMor {
@@ -275,3 +261,4 @@ h1 {
     display: none;
   }
 }
+5
