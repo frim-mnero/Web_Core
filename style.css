@@ -114,7 +114,7 @@ h1 {
   letter-spacing: -0.2px;
 }
 .main__text_readMore::before {
-  content: url(../learnKata/img/expand.svg);
+  content: url(../img/expand.svg);
   display: inline-block;
 }
 .main__img {
