@@ -1,6 +1,6 @@
 @font-face {
   font-family: "TTLakes";
-  src: url(/KateAcademy/HTML_CSS/block1.3/fonts/TTLakes-Regular.woff)
+  src: url(./fonts/TTLakes-Regular.woff)
     format("truetype");
   font-style: normal;
 }
