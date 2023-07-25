@@ -76,7 +76,7 @@ h1 {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  gap: 30px;
+  gap:24px;
 }
 .main__nav > .main__nav_item {
   white-space: nowrap;
