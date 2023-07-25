@@ -115,6 +115,8 @@ h1 {
 }
 .main__text_readMore::before {
   content: url(./img/expand.svg);
+  position: relative;
+  top: 5px;
   display: inline-block;
 }
 .main__img {
