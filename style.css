@@ -114,7 +114,7 @@ h1 {
   letter-spacing: -0.2px;
 }
 .main__text_readMore::before {
-  content: url(./img/expand.svg);
+  content: url(../learnKata/img/expand.svg);
   display: inline-block;
 }
 .main__img {
@@ -140,6 +140,7 @@ h1 {
   .main>h1{
     display: none;
   }
+ 
   .header {
     display: none;
   }
@@ -169,9 +170,6 @@ h1 {
   .section > h1 {
     padding-top: 42px;
   }
-  .main__nav {
-   
-  }
   .main__group_main {
     display: flex;
     justify-content: space-around;
@@ -179,7 +177,7 @@ h1 {
 
   .main__text {
     display: inline-block;
-    max-width: 490px;
+    width: 490px;
     max-height: 160px;
   }
   .header__rigth_group-left {
@@ -191,7 +189,7 @@ h1 {
   }
   .main__img {
     display: flex;
-    max-width: 531px;
+    width: 535px;
     margin-right: 32px;
   }
   .img {
@@ -218,7 +216,7 @@ h1 {
 
   .main__text {
     display: inline-block;
-    height: 160px;
+    width: 312px;
   }
   .header__rigth_group-left {
     display: flex;
@@ -226,7 +224,6 @@ h1 {
   }
   .main__img {
     display: block;
-    min-width: 150px;
     max-width: 100%;
   }
   .img {
@@ -246,11 +243,9 @@ h1 {
   }
   .main__text {
     max-width: 288px;
-    height: 160px;
+    margin-bottom: 42px;
   }
-  .main__text_readMor {
-    margin-bottom: 32px;
-  }
+
   .header__rigth_group-left {
     display: none;
   }
@@ -261,4 +256,4 @@ h1 {
     display: none;
   }
 }
-5
+
