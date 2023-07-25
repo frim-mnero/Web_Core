@@ -76,7 +76,7 @@ h1 {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  gap:24px;
+  gap: 24px;
 }
 .main__nav > .main__nav_item {
   white-space: nowrap;
@@ -130,6 +130,9 @@ h1 {
     .main__nav{
         display: flex;
         flex-wrap: wrap;
+    }
+    .main__img {
+      /* margin-bottom: 24px; */
     }
 }
 @media (max-width: 1920px) {
@@ -234,6 +237,9 @@ h1 {
 }
 
 @media (max-width: 767px) {
+  body{
+   height: 100%;
+  }
   .header {
     display: flex;
   }
@@ -244,7 +250,7 @@ h1 {
     padding: 24px 0;
   }
   .main__text {
-    max-width: 288px;
+    width: 100%;
   }
 
   .header__rigth_group-left {
@@ -252,9 +258,9 @@ h1 {
   }
   .img {
     display: block;
+    width: 100%;
   }
   .main__img {
     display: none;
   }
 }
-
