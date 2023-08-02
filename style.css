@@ -1,7 +1,6 @@
 @font-face {
   font-family: "TTLakes";
-  src: url(./fonts/TTLakes-Regular.woff)
-    format("truetype");
+  src: url(./fonts/TTLakes-Regular.woff) format("truetype");
   font-style: normal;
 }
 
@@ -16,13 +15,13 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  height: 88px;
   width: 100%;
   padding: 0 16px;
 }
 .header__left {
   display: flex;
 }
+
 .header__right {
   display: flex;
 }
@@ -48,7 +47,10 @@ body {
 }
 
 .item {
-  padding-top: 24px;
+  background-color: #fff;
+  border: none;
+  margin: 0;
+  padding: 0;
 }
 
 .logo {
@@ -104,6 +106,8 @@ h1 {
   letter-spacing: 0.2px;
 }
 .main__text_readMore {
+  background-color: #f8f8f8;
+  border: none;
   padding: 16px 0;
   color: #1b1c21;
   font-family: TTLakes;
@@ -126,31 +130,39 @@ h1 {
   display: none;
 }
 
-@media (min-width:1120px){
-    .main__nav{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    .main__img {
-      /* margin-bottom: 24px; */
-    }
+@media (min-width: 1120px) {
+  .main__nav {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main__img {
+    /* margin-bottom: 24px; */
+  }
 }
 @media (max-width: 1920px) {
   .main {
     height: 535px;
   }
-  /* .main > h1 {
-    display: none;
-  } */
-  .main>h1{
+  .main__title {
     display: none;
   }
- 
+  .section__title {
+    display: inline;
+  }
+
   .header {
     display: none;
   }
-  .section > h1 {
+  .section__title {
     padding: 0;
+  }
+  .section__title:before,
+  .main__title::before {
+    content: url(./img/highlight.svg);
+    display: inline-block;
+    vertical-align: middle;
+    position: absolute;
+    left: 0;
   }
   .section {
     display: flex;
@@ -170,9 +182,16 @@ h1 {
   }
   .section__group_item-title {
     padding-top: 50px;
+    color: #1b1c21;
+    font-family: TTLakes;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 150% */
+    letter-spacing: -0.2px;
   }
   .section__group_item-link,
-  .section > h1 {
+  .section__title {
     padding-top: 42px;
   }
   .main__group_main {
@@ -205,15 +224,18 @@ h1 {
   .section {
     display: none;
   }
+  .section__title {
+    display: inline;
+  }
   .header {
     display: flex;
   }
   .main {
     padding-left: 24px;
   }
-.section>h1{
-    
-}
+  .main__title {
+    display: inline;
+  }
   .main__group_main {
     display: flex;
     justify-content: space-around;
@@ -237,12 +259,13 @@ h1 {
 }
 
 @media (max-width: 767px) {
-  body{
-   height: 100%;
+  body {
+    height: 100%;
   }
   .header {
     display: flex;
   }
+
   .main {
     height: auto;
   }
