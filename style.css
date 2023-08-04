@@ -47,7 +47,7 @@ body {
 }
 
 .item {
-  background-color: #fff;
+  background-color: inherit;
   border: none;
   margin: 0;
   padding: 0;
@@ -130,6 +130,17 @@ h1 {
   display: none;
 }
 
+.section__group_item-button{
+  background-color:inherit;
+  border: none; 
+  margin: 0;
+  padding: 0;
+  
+}
+.section__group{
+  display: flex;
+  gap: 42px;
+}
 @media (min-width: 1120px) {
   .main__nav {
     display: flex;
@@ -148,13 +159,47 @@ h1 {
   }
   .section__title {
     display: inline;
-  }
+  padding-top: 42px;  }
 
   .header {
     display: none;
   }
   .section__title {
     padding: 0;
+  }
+  .section__group_item-button{
+    padding-top: 42px;
+  }
+  .application:before{
+    content: 'Оставить заявку';
+   position: relative;
+   bottom: 14px;
+   margin-right: 8px;
+    color: #1B1C21;
+    width: 125px;
+  text-align: right;
+  font-family: TTLakes;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+  letter-spacing: -0.2px;
+  }
+
+  .status-repair::before{
+    content: 'Статус ремонта';
+    position: relative;
+    bottom: 14px;
+    margin-right: 8px;
+     color: #1B1C21;
+     width: 125px;
+   text-align: right;
+   font-family: TTLakes;
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 500;
+   line-height: 24px; /* 150% */
+   letter-spacing: -0.2px;
   }
   .section__title:before,
   .main__title::before {
