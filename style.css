@@ -16,7 +16,7 @@ body {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  padding: 0 16px;
+  padding: 16px 16px;
 }
 .header__left {
   display: flex;
@@ -42,7 +42,7 @@ body {
   border-radius: 1px;
   background: #eaeaea;
   position: absolute;
-  top: 28px;
+  top: 12px;
   left: -20px;
 }
 
@@ -54,8 +54,8 @@ body {
 }
 
 .logo {
-  margin-left: 16px;
-  padding: 18.59px 0;
+   margin-left: 16px;
+ 
 }
 .main {
   background: #f8f8f8;
@@ -78,7 +78,7 @@ h1 {
   display: flex;
   flex-wrap: nowrap;
   overflow-x: scroll;
-  gap: 24px;
+  
 }
 .main__nav > .main__nav_item {
   white-space: nowrap;
@@ -91,6 +91,7 @@ h1 {
   letter-spacing: -0.2px;
   text-decoration: none;
   padding: 8px 10px 8px 16px;
+  margin-left: 24px;
 }
 .main__nav_item:hover {
   border-radius: 6px;
@@ -205,6 +206,7 @@ h1 {
   .main__title::before {
     content: url(./img/highlight.svg);
     display: inline-block;
+    
     vertical-align: middle;
     position: absolute;
     left: 0;
@@ -297,6 +299,7 @@ h1 {
   .main__img {
     display: block;
     max-width: 100%;
+    border-radius: 10px;
   }
   .img {
     display: none;
@@ -312,7 +315,7 @@ h1 {
   }
 
   .main {
-    height: auto;
+    height: 100%;
   }
   .main__nav {
     padding: 24px 0;
@@ -327,6 +330,7 @@ h1 {
   .img {
     display: block;
     width: 100%;
+    border-radius: 10px;
   }
   .main__img {
     display: none;
